@@ -1,0 +1,66 @@
+/* base styles */
+:root {
+  --padd: 30px;
+}
+
+* {
+  box-sizing:  border-box;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  background-color: #BBB;
+  padding: var(--padd);
+}
+
+main {
+  padding: var(--padd);
+}
+
+footer {
+  background-color: #888;
+  padding: var(--padd);
+}
+
+/* Grid helpers */
+.col {
+  float: left;
+  padding: 30px;
+  border: 1px solid black;
+}
+
+.col6 {
+  width: 50%;
+}
+
+.col3 {
+  width: 25%;
+}
+
+.col4 {
+  width: 33.33333333333333333%;
+}
+
+.col9 {
+  width: 75%;
+}
+
+/**
+ * Clear fix
+ */
+ .row::before,
+ .row::after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .row::after {
+     clear: both;
+ }
